@@ -1,0 +1,3 @@
+sampath_23cs133@cloudshell:~ (cs133-486905)$ gcloud pubsub topics publish my-topic --message="Message 1"
+
+sampath_23cs133@cloudshell:~ (cs133-486905)$ gcloud pubsub topics publish my-topic --message="Message 2"   
