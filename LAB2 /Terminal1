@@ -1,0 +1,14 @@
+
+sampath_23cs133@cloudshell:~ (cs133-486905)$ gcloud services enable pubsub.googleapis.com
+sampath_23cs133@cloudshell:~ (cs133-486905)$ gcloud pubsub topics create my-topic
+
+sampath_23cs133@cloudshell:~ (cs133-486905)$ gcloud pubsub subscriptions create my-subscription --topic=my-topic
+
+sampath_23cs133@cloudshell:~ (cs133-486905)$ gcloud pubsub topics publish my-topic --message="Hello , Pub/Sub!"
+
+sampath_23cs133@cloudshell:~ (cs133-486905)$ gcloud pubsub subscriptions pull my-subscription --auto-ack
+(we 
+sampath_23cs133@cloudshell:~ (cs133-486905)$ gcloud pubsub subscriptions pull my-subscription --auto-ack --limit=10
+sampath_23cs133@cloudshell:~ (cs133-486905)$ gcloud pubsub subscriptions delete my-subscription
+sampath_23cs133@cloudshell:~ (cs133-486905)$ gcloud pubsub subscriptions delete my-topic
+sampath_23cs133@cloudshell:~ (cs133-486905)$ gcloud pubsub topics delete my-topic
